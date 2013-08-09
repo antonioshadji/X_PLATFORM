@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<MDR_Data>
+  <contract>
+    <Gateway>CME-C</Gateway>
+    <Product>CL</Product>
+    <ProdType>FUTURE</ProdType>
+    <Contract>CL SEP13</Contract>
+    <CurPos>2</CurPos>
+    <PosDir>S</PosDir>
+    <Q1>2</Q1>
+    <StopPrc>10500</StopPrc>
+    <bV>300</bV>
+    <dV>600</dV>
+    <Q2>2</Q2>
+    <StartTime>00:00:01</StartTime>
+    <StopTime>23:59:00</StopTime>
+    <bCaptureOpen>false</bCaptureOpen>
+    <ALGO>nativeSL</ALGO>
+    <OffSet>4</OffSet>
+    <Description>NYMEX CRUDE</Description>
+  </contract>
+</MDR_Data>

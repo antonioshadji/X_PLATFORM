@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<INI>
+  <address>
+    <TO>receiver@cta.com</TO>
+  </address>
+  <address>
+    <TO>receiver2@cta.com</TO>
+  </address>
+  <parameters>
+    <FROM>sender@cta.com</FROM>
+    <SERVER>mailserverIPorURL</SERVER>
+    <PORT>25</PORT>
+    <SSL>false</SSL>
+    <LOGIN>user</LOGIN>
+    <PWORD>password</PWORD>
+  </parameters>
+  <!--add following to be able to set the roll time per contract: Requires code modification-->
+  <!--<setup>
+    <ROLLTIME>17:05:00</ROLLTIME> 
+  </setup>-->
+  <startup>
+    <TRADEDATE>080310</TRADEDATE>
+    <OPEN>8058</OPEN>
+    <ORDNUM>1</ORDNUM>
+  </startup>
+</INI>
