@@ -7,11 +7,11 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("X_Platform2")]
-[assembly: AssemblyDescription("Automated Execution Platform")]
+[assembly: AssemblyDescription("CTA Automated Execution Platform")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("TRADING TECHNOLOGIES INTERNATIONAL")]
+[assembly: AssemblyCompany("SiVantage LLC")]
 [assembly: AssemblyProduct("X_Platform2")]
-[assembly: AssemblyCopyright("Copyright ©  2009")]
+[assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 //[assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2009.08.04.*")]
-[assembly: AssemblyFileVersion("2009.08.04.0")]
+[assembly: AssemblyVersion("2014.04.12.*")]
+[assembly: AssemblyFileVersion("2014.04.12.0")]
 [assembly: NeutralResourcesLanguageAttribute("en")]

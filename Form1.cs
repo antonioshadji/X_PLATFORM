@@ -259,7 +259,7 @@ namespace X_Platform2
             _displayParameters(false); //record parameters in logfile
 
             _connectExchange();
-            _ChkCustomers();
+            //_ChkCustomers();
 
             button5.Enabled = true;
             lblOrder.Text = string.Empty;
@@ -2674,7 +2674,8 @@ namespace X_Platform2
         /// <param name="serverUp"></param>
         private void _gatewayStatusUpdate(string exchange, string text, int openned, int serverUp)
         {
-            if (String.Equals(exchange, ttGateway, StringComparison.OrdinalIgnoreCase))
+            //if (String.Equals(exchange, ttGateway, StringComparison.OrdinalIgnoreCase))
+            if (String.Equals(exchange.Substring(0, ttGateway.Length), ttGateway, StringComparison.OrdinalIgnoreCase))
             {
                 log.LogListBox("Process Gateway Status Update");
 
@@ -3206,7 +3207,8 @@ namespace X_Platform2
 
         private void TTGate_OnExchangeStateUpdate(string exchange, string text, int openned, int serverUp)
         {
-            if (String.Equals(exchange, ttGateway, StringComparison.OrdinalIgnoreCase))
+            //if (String.Equals(exchange, ttGateway, StringComparison.OrdinalIgnoreCase))
+            if (exchange.Length >= ttGateway.Length && String.Equals(exchange.Substring(0, ttGateway.Length), ttGateway, StringComparison.OrdinalIgnoreCase))
             {
                 log.WriteLog("TTGate_OnExchangeStateUpdate");
                 _gatewayStatusUpdate(exchange, text, openned, serverUp);
@@ -3222,6 +3224,10 @@ namespace X_Platform2
                     break;
                 case 32:
                     log.LogListBox("STATUS: X_TRADER PRO is Available");
+                    break;
+                case 8:
+                    log.LogListBox("STATUS: Customer Defaults updated");
+                    _ChkCustomers();
                     break;
                 default:
                     log.WriteLog("STATUS: " + hintMask.ToString());
